@@ -4,8 +4,8 @@ import { Container } from "@/components/common/container";
 import { Logo } from "@/components/common/logo";
 import { navLinks } from "@/data/navigation";
 import {
-  XIcon as MdClose,
-  HamburgerIcon as MdMenu,
+  XIcon as CloseIcon,
+  ListIcon as MenuIcon,
 } from "@phosphor-icons/react";
 import { useCallback, useEffect, useState } from "react";
 
@@ -39,9 +39,9 @@ export function MobileNavigation() {
         <Logo small white className="z-10 h-8" />
         <button onClick={() => setIsOpen(!isOpen)} className="z-10 w-fit">
           {isOpen ? (
-            <MdClose className="h-8 w-8" />
+            <CloseIcon className="h-8 w-8" />
           ) : (
-            <MdMenu className="h-8 w-8" />
+            <MenuIcon className="h-8 w-8" />
           )}
         </button>
       </Container>
