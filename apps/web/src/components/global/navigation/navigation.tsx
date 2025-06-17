@@ -28,14 +28,14 @@ export function Navigation() {
   return (
     <motion.div
       layout
-      className={`fixed left-0 top-0 z-20 hidden sm:block ${
+      className={`fixed left-0 top-0 z-20 hidden lg:block ${
         isBackgroundVisible ? "bg-dark/80 shadow-md backdrop-blur" : "mt-8"
       }`}
     >
       <Container large>
-        <nav className="hidden h-20 grid-cols-3 items-center px-4 sm:px-8 md:grid">
-          <Logo white className="h-6" />
-          <ul className="flex w-fit flex-row gap-4 justify-self-center whitespace-nowrap font-bold uppercase sm:gap-8">
+        <nav className="hidden h-20 grid-cols-3 items-center px-4 lg:grid lg:px-8">
+          <Logo />
+          <ul className="flex w-fit flex-row gap-4 justify-self-center whitespace-nowrap font-bold uppercase lg:gap-16">
             {navLinks &&
               navLinks.map(({ text, href }) => (
                 <NavigationLink key={href} text={text} href={href} />

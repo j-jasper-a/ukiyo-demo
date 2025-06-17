@@ -7,7 +7,7 @@ export function Experience() {
   return (
     <Section id="experience">
       <SectionTitle text="Experience" />
-      <Container className="flex flex-col gap-8 px-4 sm:gap-16 sm:px-8">
+      <Container className="flex flex-col gap-8 px-4 lg:gap-16 lg:px-8">
         <ExperienceCard
           heading="Exquisite Culinary Delights"
           tag="Ambience"

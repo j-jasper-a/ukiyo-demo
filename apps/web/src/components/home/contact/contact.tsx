@@ -22,8 +22,8 @@ export function Contact() {
   return (
     <Section id="contact">
       <SectionTitle text="Contact" />
-      <Container className="px-4 sm:px-8">
-        <div className="grid grid-cols-1 overflow-hidden sm:grid-cols-2">
+      <Container className="px-4 lg:px-8">
+        <div className="grid grid-cols-1 overflow-hidden lg:grid-cols-2">
           <CallToAction />
           <motion.div
             ref={infoRef}

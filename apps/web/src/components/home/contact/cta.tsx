@@ -30,7 +30,7 @@ export function CallToAction() {
           ease: "easeInOut",
         }}
         layout={"position"}
-        className="flex w-fit flex-col items-center gap-4 text-center sm:gap-8"
+        className="flex w-fit flex-col items-center gap-4 text-center lg:gap-8"
       >
         <HeadingTertiary text="You are invited and welcome." />
         <div>

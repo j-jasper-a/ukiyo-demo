@@ -34,11 +34,11 @@ export function Menu() {
       />
       <div
         ref={navRef}
-        className={`sticky left-0 top-16 z-10 origin-left transition-all duration-500 sm:top-20 ${
-          isNavInView ? "bg-brand text-dark px-4 py-2 sm:px-8" : ""
+        className={`sticky left-0 top-16 z-10 origin-left transition-all duration-500 lg:top-20 ${
+          isNavInView ? "bg-brand text-dark px-4 py-2 lg:px-16" : ""
         }`}
       >
-        <Container className="flex h-full flex-row items-center justify-center gap-4 sm:gap-8">
+        <Container className="flex h-full flex-row items-center justify-center gap-4 lg:gap-8">
           <MenuNavigationLink
             text="Starters"
             active={activeMenuSection === "starters"}
@@ -61,8 +61,8 @@ export function Menu() {
           />
         </Container>
       </div>
-      <Container className="grid grid-cols-1 gap-8 overflow-x-hidden px-4 sm:grid-cols-2 sm:gap-16 sm:px-8">
-        <div className="aspect-square h-full sm:aspect-[4/1] lg:aspect-auto">
+      <Container className="grid grid-cols-1 gap-8 overflow-x-hidden px-4 lg:grid-cols-2 lg:gap-16 lg:px-8">
+        <div className="aspect-square h-full lg:aspect-auto">
           <img
             src={`/assets/images/menu/${activeMenuSection}.webp`}
             width={1500}

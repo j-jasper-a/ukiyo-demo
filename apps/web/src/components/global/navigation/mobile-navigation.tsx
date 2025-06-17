@@ -29,14 +29,14 @@ export function MobileNavigation() {
 
   return (
     <div
-      className={`fixed z-20 sm:hidden ${
+      className={`fixed z-20 lg:hidden ${
         isBackgroundVisible
           ? "bg-dark/80 backdrop-blur transition-all duration-300"
           : ""
       }`}
     >
       <Container className="flex flex-row justify-between p-4">
-        <Logo small white className="z-10 h-8" />
+        <Logo />
         <button onClick={() => setIsOpen(!isOpen)} className="z-10 w-fit">
           {isOpen ? (
             <CloseIcon className="h-8 w-8" />

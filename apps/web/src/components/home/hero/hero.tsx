@@ -12,7 +12,7 @@ export function Hero() {
         src="/assets/videos/backdrop.mp4"
         className="absolute left-0 top-0 -z-20 h-full w-full object-cover"
       />
-      <Container className="flex h-full flex-col items-center justify-center px-4 sm:px-8">
+      <Container className="flex h-full flex-col items-center justify-center px-4 lg:px-8">
         <HeadingPrimary />
       </Container>
     </div>

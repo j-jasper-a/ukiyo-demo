@@ -38,6 +38,6 @@
   }
 
   body {
-    @apply bg-dark font-regular text-light text-base leading-normal tracking-normal;
+    @apply bg-dark font-regular text-light text-base leading-normal tracking-normal antialiased;
   }
 }

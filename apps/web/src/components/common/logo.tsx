@@ -1,12 +1,5 @@
 "use client";
 
-type LogoProps = {
-  white?: boolean;
-  black?: boolean;
-  small?: boolean;
-  className?: string;
-};
-
 function clickHandler() {
   window.scrollTo({
     top: 0,
@@ -18,21 +11,24 @@ function clickHandler() {
   }
 }
 
-export function Logo({ white, black, small, className }: LogoProps) {
+export function Logo() {
   return (
     <button
       onClick={clickHandler}
-      className={`w-fit cursor-pointer ${className}`}
+      className={"group flex w-fit cursor-pointer items-center"}
     >
-      <img
-        src={`/assets/images/logos/logo${small ? "-small" : ""}.svg`}
-        width={256}
-        height={256}
-        alt="Logo"
-        className={`h-full ${
-          white ? "brightness-0 invert" : black ? "brightness-0" : ""
-        }`}
-      />
+      <div className="relative h-8 w-auto">
+        <img
+          src={`/assets/images/logos/logo.svg`}
+          width={256}
+          height={256}
+          alt="Logo"
+          className="h-full w-full"
+        />
+      </div>
+      <p className="font-special group-hover:text-brand text-nowrap text-2xl font-bold transition-all duration-300">
+        / Ukiyo
+      </p>
     </button>
   );
 }
