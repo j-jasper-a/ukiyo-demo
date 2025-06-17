@@ -1,0 +1,29 @@
+---
+import "@fontsource-variable/rubik";
+import "@fontsource-variable/playfair-display";
+import "../styles/global.css";
+import { Footer } from "@/components/global/footer/footer";
+import { MobileNavigation } from "@/components/global/navigation/mobile-navigation";
+import { Navigation } from "@/components/global/navigation/navigation";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Ukiyo (浮世) - Japanese Fine Dining Restaurant</title>
+    <meta
+      name="description"
+      content="Ukiyo (浮世) is a Japanese fine dining restaurant established in 2022. It is situated at the heart of Dhaka in Gulshan. It dedicates itself to serving memorable tastes with a strong conviction for authenticity. It prides itself in bringing the complete experience of Japanese food instead of being limited to only one or two categories."
+    />
+  </head>
+  <body>
+    <Navigation client:load />
+    <MobileNavigation client:load />
+    <slot />
+    <Footer />
+  </body>
+</html>

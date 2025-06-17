@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Colors */
+  --color-brand: var(--brand);
+  --color-dark: var(--dark);
+  --color-darker: var(--darker);
+  --color-light: var(--light);
+  --color-transparent: var(--transparent);
+  --color-black: var(--black);
+
+  /* Fonts */
+  --font-regular: var(--font-regular);
+  --font-special: var(--font-special);
+}
+
+:root {
+  /* Colors */
+  --brand: #f0cd97;
+  --dark: #1c1c1c;
+  --darker: #212121;
+  --light: #f7f9f9;
+  --transparent: #ffffff00;
+  --black: #000000;
+
+  /* Fonts */
+  --font-regular: "Rubik Variable", sans-serif;
+  --font-special: "Playfair Display Variable", serif;
+}
+
+@layer base {
+  * {
+    @apply w-full;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-dark font-regular text-light text-base leading-normal tracking-normal;
+  }
+}
