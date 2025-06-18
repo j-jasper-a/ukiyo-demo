@@ -1,7 +1,9 @@
 {
   "name": "@ukiyo-demo/web",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
+  "license": "MIT",
+  "author": "Jihan Jasper Al Rashid",
   "scripts": {
     "astro": "astro",
     "build": "astro build",
